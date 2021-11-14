@@ -1,0 +1,13 @@
+baseURL: 'https://basilbook.org/'
+languageCode: 'en-us'
+defaultContentLanguage: 'en'
+languages:
+  ru:
+    title: 'Книги, Код, Чай'
+    weight: 1
+  en:
+    title: 'Books, Code, Tea'
+    weight: 2
+permalinks:
+  articles: /:slug
+timeZone: UTC

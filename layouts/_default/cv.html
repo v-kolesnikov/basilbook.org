@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <section class="max-w-xl">
+    <div class="py-5 space-y-4">
+      <h1 class="text-5xl sm:text-6xl font-medium">{{ .Title }}</h1>
+      <h2 class="text-2xl">{{ .Page.Params.subtitle }}</h2>
+    </div>
+
+    <div class="space-y-4">
+      <div class="text-sm sm:text-base font-mono">
+        <div>email: <a href="mailto:re.vkolesnikov@gmail.com" class="hover:underline" target="_blank">re.vkolesnikov@gmail.com</a></div>
+        <div>telegram: <a href="https://t.me/vasily_kolesnikov" class="hover:underline" target="_blank">@vasily_kolesnikov</a></div>
+        <div>linkedin: <a href="https://www.linkedin.com/in/books-and-code/" class="hover:underline" target="_blank">linkedin.com/books-and-code</a></div>
+      </div>
+    </div>
+
+    <div class="content-markdown">{{ .Content }}</div>
+  </section>
+{{ end }}

@@ -1,0 +1,22 @@
+{{ define "toc-index" }}
+  {{ range .Pages.GroupByDate "2006" }}
+    <li><a href="#year-{{.Key}}" title="{{.Key}}">{{.Key}}</a></li>
+  {{ end }}
+{{ end }}
+
+{{ define "main" }}
+<div class="py-5">
+  <h1 class="text-5xl sm:text-8xl tracking-tighter">{{ .Title }}</h1>
+</div>
+<div class="content-markdown">{{ .Content }}</div>
+<ul>
+  {{ range .Pages.GroupByDate "2006" }}
+    <p>{{ .Key }}</p>
+    {{ range .Pages }}
+      <li>
+        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
+{{ end }}

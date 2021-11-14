@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply
+    antialiased;
+}
+
+.content-markdown {
+  @apply font-serif;
+}
+
+.content-markdown a {
+  @apply underline hover:no-underline;
+}
+
+.content-markdown h1, h2, h3, h4, h5 {
+  @apply font-sans;
+  @apply my-5;
+}
+
+.content-markdown h2 {
+  @apply font-bold;
+}
+
+.content-markdown h3 {
+  @apply text-xl;
+}
+
+.content-markdown p {
+  @apply my-5;
+  hyphens: auto;
+}
+
+.content-markdown ul {
+  @apply space-y-2.5 list-disc;
+}
+
+.content-markdown ul>li {
+  @apply ml-10;
+}

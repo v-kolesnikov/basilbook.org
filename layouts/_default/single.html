@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <!-- {{ if .IsTranslated }} -->
+  <!--   <ul> -->
+  <!--     {{ range .Translations }} -->
+  <!--     <li> -->
+  <!--       <a href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }}{{ end }}</a> -->
+  <!--     </li> -->
+  <!--     {{ end }} -->
+  <!--   </ul> -->
+  <!-- {{ end }} -->
+
+  <section class="max-w-xl">
+    <div class="py-5">
+      <h1 class="text-5xl sm:text-8xl tracking-tighter">{{ .Title }}</h1>
+    </div>
+    <div class="content-markdown">{{ .Content }}</div>
+  </section>
+{{ end }}
