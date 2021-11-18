@@ -965,3 +965,9 @@ body {
     line-height: 1;
   }
 }
+
+@media print {
+  .print\:hidden {
+    display: none;
+  }
+}

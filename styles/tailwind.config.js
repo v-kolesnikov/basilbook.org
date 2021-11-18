@@ -15,6 +15,9 @@ module.exports = {
       },
       fontSize: {
         'tiny': '0.65rem',
+      },
+      screens: {
+        'print': {'raw': 'print'},
       }
     }
   }
