@@ -19,4 +19,4 @@ The responsive design aims to improve readability and emphasize content through 
 
 ## Kudos
 
-Design concept borrowed from @brandur and its personal website [brandur.org](https://brandur.org.)
+Design concept borrowed from @brandur and its personal website [brandur.org](https://brandur.org).
