@@ -13,3 +13,7 @@ params:
 permalinks:
   articles: /:slug
 timeZone: UTC
+
+markup:
+  highlight:
+    noClasses: false

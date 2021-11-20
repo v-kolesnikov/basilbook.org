@@ -912,6 +912,10 @@ body {
   margin-left: 2.5rem;
 }
 
+code {
+  font-size: 0.8rem !important;
+}
+
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
 }

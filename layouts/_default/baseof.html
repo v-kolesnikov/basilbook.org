@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Language.Lang }}">
-<head>{{ partial "head" . }}</head>
+<head>{{ partial "head" . }}{{ block "head" . }}{{ end }}</head>
 
 <body>
   <div class="container">

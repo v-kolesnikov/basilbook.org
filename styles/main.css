@@ -40,3 +40,7 @@ body {
 .content-markdown ul>li {
   @apply ml-10;
 }
+
+code {
+  font-size: 0.8rem !important;
+}

@@ -1,3 +1,7 @@
+{{ define "head" }}
+<link href="/prism.css" rel="stylesheet" />
+{{ end }}
+
 {{ define "main" }}
   <!-- {{ if .IsTranslated }} -->
   <!--   <ul> -->
@@ -15,4 +19,5 @@
     </div>
     <div class="content-markdown">{{ .Content }}</div>
   </section>
+  <script src="/prism.js"></script>
 {{ end }}
