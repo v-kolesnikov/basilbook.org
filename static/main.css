@@ -653,10 +653,6 @@ video {
   margin-right: auto;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
 .block {
   display: block;
 }
@@ -776,6 +772,10 @@ video {
   padding-top: 10rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -786,6 +786,10 @@ video {
 
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-right {
@@ -942,6 +946,10 @@ code {
     order: 0;
   }
 
+  .sm\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -952,6 +960,10 @@ code {
 
   .sm\:flex-row {
     flex-direction: row;
+  }
+
+  .sm\:text-right {
+    text-align: right;
   }
 
   .sm\:text-6xl {
