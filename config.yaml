@@ -12,6 +12,7 @@ params:
   gaMeasurementID: 'G-T02N9N8W20'
 permalinks:
   articles: /:slug
+  foliage: /:slug
 timeZone: UTC
 
 markup:
