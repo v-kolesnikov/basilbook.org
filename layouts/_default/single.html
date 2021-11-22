@@ -13,11 +13,13 @@
   <!--   </ul> -->
   <!-- {{ end }} -->
 
-  <section class="max-w-xl">
-    <div class="py-5">
-      <h1 class="text-5xl sm:text-8xl tracking-tighter">{{ .Title }}</h1>
+  <section>
+    <div class="py-5 max-w-5xl">
+      <h1 class="pb-10 sm:pb-12 text-5xl sm:text-8xl tracking-tighter border-b-8 sm:border-b-10 border-black">{{ .Title }}</h1>
     </div>
-    <div class="content-markdown">{{ .Content }}</div>
+    <div class="max-w-xl">
+      <div class="content-markdown">{{ .Content }}</div>
+    </div>
   </section>
   <script src="/prism.js"></script>
 {{ end }}

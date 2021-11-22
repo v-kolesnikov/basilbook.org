@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        '10': '10px',
+      },
       fontFamily: {
         sans: '"helvetica neue", helvetica, arial, geneva, sans-serif',
         serif: 'cardo, georgia, serif',
