@@ -41,6 +41,15 @@ body {
   @apply ml-10;
 }
 
+.content-markdown figure {
+  @apply relative my-10;
+}
+
+.content-markdown figure>figcaption {
+  @apply sm:absolute sm:top-0 sm:-left-32 sm:w-28 sm:pt-3;
+  @apply text-sm italic text-center sm:text-right;
+}
+
 code {
   font-size: 0.8rem !important;
 }

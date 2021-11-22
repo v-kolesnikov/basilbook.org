@@ -916,6 +916,47 @@ body {
   margin-left: 2.5rem;
 }
 
+.content-markdown figure {
+  position: relative;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .content-markdown figure>figcaption {
+    position: absolute;
+  }
+
+  .content-markdown figure>figcaption {
+    top: 0px;
+  }
+
+  .content-markdown figure>figcaption {
+    left: -8rem;
+  }
+
+  .content-markdown figure>figcaption {
+    width: 7rem;
+  }
+
+  .content-markdown figure>figcaption {
+    padding-top: 0.75rem;
+  }
+}
+
+.content-markdown figure>figcaption {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-style: italic;
+}
+
+@media (min-width: 640px) {
+  .content-markdown figure>figcaption {
+    text-align: right;
+  }
+}
+
 code {
   font-size: 0.8rem !important;
 }

@@ -8,7 +8,8 @@ tags:
  - tea
 ---
 
-![](/images/lu-yu.jpeg)
+{{< figure src="/images/lu-yu.jpeg" caption="Лу Юй. Статуя (Хучжоу, Чжэцзян)"  >}}
+<!-- 陆羽像（浙江湖州) -->
 
 Chinese (simplified)
 &mdash;
