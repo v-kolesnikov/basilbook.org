@@ -19,11 +19,14 @@
     </div>
 
     <div class="max-w-2xl w-auto">
+      {{ if (ne .Page.Params.toc false) }}
       {{ with .TableOfContents }}
         <div id="toc" class="sm:ml-8 sm:float-right w-52">
           <h2 class="text-tiny font-bold uppercase">Contents</h2>
           <div class="content-markdown">{{.}}</div>
+          <div class="mx-5 my-7 border-b"></div>
         </div>
+      {{ end }}
       {{ end }}
       <article class="content-markdown">{{ .Content }}</article>
     </div>

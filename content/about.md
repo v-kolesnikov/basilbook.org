@@ -1,5 +1,6 @@
 ---
 Title: About
+toc: false
 ---
 
 I’m the Chief Technology Officer (CTO) at [Bookmate](https://bookmate.com), where I work on the company’s technology stack and manage the greatest engineering team I've ever met.
