@@ -18,3 +18,7 @@ timeZone: UTC
 markup:
   highlight:
     noClasses: false
+  tableOfContents:
+    endLevel: 3
+    ordered: true
+    startLevel: 2

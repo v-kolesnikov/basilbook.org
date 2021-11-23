@@ -17,8 +17,15 @@
     <div class="py-5 max-w-5xl">
       <h1 class="pb-10 sm:pb-12 text-5xl sm:text-8xl tracking-tighter border-b-8 sm:border-b-10 border-black">{{ .Title }}</h1>
     </div>
-    <div class="max-w-xl">
-      <div class="content-markdown">{{ .Content }}</div>
+
+    <div class="max-w-2xl w-auto">
+      {{ with .TableOfContents }}
+        <div id="toc" class="sm:ml-8 sm:float-right w-52">
+          <h2 class="text-tiny font-bold uppercase">Contents</h2>
+          <div class="content-markdown">{{.}}</div>
+        </div>
+      {{ end }}
+      <article class="content-markdown">{{ .Content }}</article>
     </div>
   </section>
   <script src="/prism.js"></script>

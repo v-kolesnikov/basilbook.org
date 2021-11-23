@@ -673,12 +673,24 @@ video {
   width: 80%;
 }
 
+.w-auto {
+  width: auto;
+}
+
+.w-52 {
+  width: 13rem;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-col {
@@ -898,12 +910,15 @@ body {
 }
 
 .content-markdown h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
 }
 
 .content-markdown h3 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 700;
 }
 
 .content-markdown p {
@@ -969,6 +984,41 @@ body {
   }
 }
 
+#toc h2 {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+
+#TableOfContents ol {
+  list-style-type: decimal;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+  font-size: 0.65rem;
+}
+
+#TableOfContents ol > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+#TableOfContents ol>li {
+  margin-left: 1rem;
+}
+
+#TableOfContents ol>li > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+#TableOfContents ol>li {
+  padding-left: 0.625rem;
+}
+
+#TableOfContents ol>li>ol {
+  list-style-type: lower-alpha;
+}
+
 code {
   font-size: 0.8rem !important;
 }
@@ -999,8 +1049,16 @@ code {
     order: 0;
   }
 
+  .sm\:float-right {
+    float: right;
+  }
+
   .sm\:ml-10 {
     margin-left: 2.5rem;
+  }
+
+  .sm\:ml-8 {
+    margin-left: 2rem;
   }
 
   .sm\:block {

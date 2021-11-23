@@ -21,11 +21,11 @@ body {
 }
 
 .content-markdown h2 {
-  @apply font-bold;
+  @apply text-base font-bold;
 }
 
 .content-markdown h3 {
-  @apply text-xl;
+  @apply text-sm font-bold;
 }
 
 .content-markdown p {
@@ -48,6 +48,24 @@ body {
 .content-markdown figure>figcaption {
   @apply sm:absolute sm:top-0 sm:-left-32 sm:w-28 sm:pt-3;
   @apply text-sm italic text-center sm:text-right;
+}
+
+#toc h2 {
+  @apply mt-0 mb-4;
+}
+
+#TableOfContents ol {
+  @apply list-decimal;
+  @apply text-tiny font-sans;
+  @apply space-y-2;
+}
+
+#TableOfContents ol>li {
+  @apply ml-4 pl-2.5 space-y-2;
+}
+
+#TableOfContents ol>li>ol {
+  @apply list-lalpha;
 }
 
 code {

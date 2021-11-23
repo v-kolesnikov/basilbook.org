@@ -8,6 +8,10 @@ This is an example page to show this site typography.
 
 ## H2 title
 
+### h3 title
+
+## List
+
 - **Text bold**
 
 - *Text italic*

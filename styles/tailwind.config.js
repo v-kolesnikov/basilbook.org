@@ -19,6 +19,9 @@ module.exports = {
       fontSize: {
         'tiny': '0.65rem',
       },
+      listStyleType: {
+        lalpha: 'lower-alpha',
+      },
       screens: {
         'print': {'raw': 'print'},
       }
