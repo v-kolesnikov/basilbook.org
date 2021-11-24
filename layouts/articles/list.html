@@ -25,7 +25,7 @@
   {{ range .Pages.GroupByDate "2006" }}
     <div id="year-{{.Key}}" class="space-y-2">
       <h2 class="font-bold">{{ .Key }}</h2>
-      <ul class="space-y-2">
+      <ul class="space-y-6">
         {{ range .Pages }}
           <li>
             <a href="{{.Permalink}}">
