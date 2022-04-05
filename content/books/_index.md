@@ -1,5 +1,3 @@
 ---
 title: Books
 ---
-
-Coming soon..

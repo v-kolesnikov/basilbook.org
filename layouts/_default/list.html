@@ -8,15 +8,33 @@
 <div class="py-5">
   <h1 class="text-5xl sm:text-8xl tracking-tighter">{{ .Title }}</h1>
 </div>
-<div class="content-markdown">{{ .Content }}</div>
-<ul>
+
+{{ with .OutputFormats.Get "rss" }}
+  <div class="py-5">
+    <a
+      href="{{.Permalink}}"
+      title="{{$.Site.Title | safeHTML}}"
+      target="_blank"
+      class="font-serif border-b hover:border-b-0 border-black"
+      >Atom feed</a>
+  </div>
+{{ end }}
+
+<div class="space-y-8">
   {{ range .Pages.GroupByDate "2006" }}
-    <p>{{ .Key }}</p>
-    {{ range .Pages }}
-      <li>
-        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-      </li>
-    {{ end }}
+    <div id="year-{{.Key}}" class="space-y-2">
+      <h2 class="font-bold">{{ .Key }}</h2>
+      <ul class="space-y-6">
+        {{ range .Pages }}
+          <li>
+            <a href="{{.Permalink}}">
+              <div class="font-bold">{{.Title}}</div>
+              <div class="text-tiny text-gray-500 italic">{{.Date.Format "January 2, 2006"}}</div>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
   {{ end }}
-</ul>
+</div>
 {{ end }}
