@@ -9,17 +9,17 @@ Also experienced in frontend and mobile apps development as project manager and 
 
 ## Education
 
-[Moscow State Forest University](https://eng.msfu.ru/). Faculty of Computer Science (a.k.a FEST)
+[Moscow State Forest University](https://eng.msfu.ru/). Space [Faculty](https://eng.msfu.ru/faculties/sf/).
 
 - 2008-2012: Bachelor of Mathematics
 - 2012-2014: Master of Mathematics
 
 ## Professional appointments
 
-- 2012-2015: TV & Video enginer at biggest russian TV channels
+- 2012-2015: TV & Video engineer at biggest russian TV channels
 - 2015-2017: Software engineer at several companies: e-shops, mass media
 - 2017-2019: Principal software engineer at Bookmate.com
-- 2019-2023: Chief Technology Officier at Bookmate.com
+- 2019-2023: Chief Technology Officer at Bookmate.com
 
 ## Intro
 
